@@ -4,6 +4,7 @@ html {
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 a:link {
@@ -97,7 +98,6 @@ nav {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 50%;
     height: 100%;
     margin: 1px;
     padding: 1px;
@@ -113,53 +113,19 @@ nav {
     height: 100%;
 }
 
-li.main-page a {
+li .navbar-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 0 15px;
     height: 50%;
     margin: 5px;
 }
 
-li.gallery a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 20px;
-    margin: 5px;
-}
-
-li.location a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 20px;
-    margin: 5px;
-}
-
-li.contact a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 20px;
-    margin: 5px;
-}
-
-li.booking a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 20px;
-    margin: 5px;
-}
-
-li.booking .booking-link {
-    color: #b0d105;
+.booking {
+    color: #b0d105 !important;
 }
 
 .container {
@@ -596,9 +562,45 @@ li.booking .booking-link {
 
 /* STYLES FOR MOBILE */
 
+.mobile-menu {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: red;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.03, .71, .03, .98);
+}
+
+.mobile-menu.is-active {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.03, .71, .03, .98);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    text-align: center;
+}
+
 @media screen and (max-width:576px) {
+    .nav-ul {
+        display: none;
+    }
     .navbar {
         width: 100%;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
     }
     .container {
         width: 100%;
