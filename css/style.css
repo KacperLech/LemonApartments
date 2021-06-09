@@ -37,7 +37,7 @@ a:active {
     align-items: center;
     background-color: white;
     width: 100%;
-    height: 5%;
+    height: 45px;
     position: fixed;
     z-index: 2;
 }
@@ -48,38 +48,17 @@ a:active {
     align-items: center;
     width: 50%;
     height: 100%;
-    margin: 1px;
-    padding: 1px 1px 1px 10px;
+    margin-left: 10px;
 }
 
-#navbar-logo-background {
+.logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 10%;
-    height: 100%;
-    background-color: #b0d105;
-}
-
-#navbar-logo-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-    font-size: 4em;
-}
-
-#navbar-logo-content-first-letter {
-    width: 50%;
-    height: 100%;
-    color: white;
-}
-
-#navbar-logo-content-second-letter {
-    width: 50%;
-    height: 100%;
-    color: black;
+    background-size: cover;
+    width: 80px;
+    height: 45px;
+    background-image: url(../img/AL_logo.jpg);
 }
 
 .navbar-menu {
@@ -98,6 +77,7 @@ nav {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    width: 50%;
     height: 100%;
     margin: 1px;
     padding: 1px;
@@ -306,7 +286,7 @@ li .navbar-item {
     flex-direction: row;
     background-color: #b0d105;
     box-shadow: 5px 5px 10px black;
-    width: 600px;
+    width: 40%;
     height: 200px;
     padding: 1px;
 }
@@ -569,7 +549,8 @@ li .navbar-item {
     right: 0;
     width: 70%;
     height: 100vh;
-    background-color: red;
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
     transform: translateX(100%);
     transition-property: transform;
     transition-duration: 300ms;
@@ -586,10 +567,11 @@ li .navbar-item {
 .hamburger {
     display: none;
     font-size: 30px;
-    text-align: center;
+    text-align: right;
 }
 
 @media screen and (max-width:576px) {
+    /*MOBILE NAV BAR MENU*/
     .nav-ul {
         display: none;
     }
@@ -597,12 +579,76 @@ li .navbar-item {
         width: 100%;
     }
     .mobile-menu {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .hamburger {
         display: block;
     }
+    .mobile-menu-nav-ul {
+        list-style-type: none;
+        display: block;
+        text-align: center;
+        color: rgba(0, 0, 0);
+        width: 100%;
+        height: 100%;
+    }
+    li .mobile-navbar-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 150px;
+        margin: 5px;
+        font-size: 2.0em;
+        border-bottom: 4px solid #b0d105;
+    }
+    .booking {
+        color: #b0d105 !important;
+    }
     .container {
         width: 100%;
+    }
+    #main-page-background-photo {
+        height: 100vh;
+    }
+    #main-page-about-us {
+        height: 350px;
+    }
+    #main-page-about-us-content-name {
+        font-size: 30px;
+        width: 30%;
+        height: 20px;
+    }
+    #main-page-about-us-content-description {
+        font-size: 14px;
+        width: 100%;
+        height: 140px;
+    }
+    #main-page-about-us-content-gallery-link {
+        width: 30%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .main-page-booking-reservation {
+        width: 100%;
+        height: 300px;
+    }
+    .main-page-booking-reservation-title {
+        font-size: 30px;
+        width: 30%;
+    }
+    .main-page-booking-reservation-description {
+        font-size: 14px;
+        width: 100%;
+    }
+    .main-page-booking-reservation-link {
+        width: 30%;
+        height: 50px;
+        font-size: 20px;
     }
 }
