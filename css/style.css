@@ -651,4 +651,68 @@ li .navbar-item {
         height: 50px;
         font-size: 20px;
     }
+    .main-page-contact {
+        height: 300px;
+    }
+    .main-page-contact-content {
+        align-items: center;
+        width: 80%;
+        height: 150px;
+    }
+    .main-page-contact-address {
+        width: 200px;
+        height: 140px;
+    }
+    .main-page-contact-address-name {
+        font-size: 20px;
+        height: 20px;
+    }
+    .main-page-contact-address-content {
+        font-size: 14px;
+        height: 45px;
+    }
+    .main-page-contact-contact {
+        width: 200px;
+        height: 140px;
+    }
+    .main-page-contact-contact-name {
+        font-size: 20px;
+        height: 20px;
+    }
+    .main-page-contact-contact-content {
+        width: 200px;
+        height: 80px;
+    }
+    .main-page-contact-contact-content-phone {
+        justify-content: center;
+        width: 240px;
+        height: 20px;
+    }
+    .main-page-contact-contact-content-phone-icon {
+        justify-content: center;
+        width: 20px;
+        height: 15px;
+        font-size: 20px;
+    }
+    .main-page-contact-contact-content-phone-number {
+        justify-content: center;
+        width: 125px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .main-page-contact-contact-content-mail {
+        justify-content: center;
+        width: 180px;
+        height: 40px;
+    }
+    .main-page-contact-contact-content-mail-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .main-page-contact-contact-content-mail-address {
+        width: 195px;
+        height: 35px;
+        font-size: 14px;
+    }
 }
